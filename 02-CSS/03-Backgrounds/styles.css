@@ -1,0 +1,32 @@
+body {
+    margin: 0px;
+    background-image: url("https://i.pinimg.com/originals/e8/b3/e1/e8b3e1ed9ba236097bbc8cab3e51dd6e.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+div {
+    height: 600px;
+    background-size: 100% 100%;
+    margin-bottom: 500px;
+    /* background-attachment: fixed; */
+}
+
+#div_1 {
+    background-image: url("https://wallpapercave.com/wp/wp4419229.jpg");
+}
+#div_2 {
+    background-image: url("https://wallpapercave.com/wp/wp4012092.jpg");
+}
+#div_3 {
+    background-image: url("https://wallpaperaccess.com/full/1088718.jpg");
+}
+#div_4 {
+    background-image: url("https://wallpapercave.com/wp/wp1862710.jpg");
+}
+#div_5 {
+    background-image: url("http://im.rediff.com/cricket/2015/feb/22shikhar.jpg");
+}
+#div_6 {
+    background-image: url("https://www.elsetge.cat/myimg/f/60-600582_csk-players-wallpapers-with-profile-indian-cricket-suresh.jpg");
+}

@@ -1,0 +1,33 @@
+#parent {
+    border: 2px solid red;
+}
+
+/* Pseudo Elements */
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.col-1 {
+    /* background-color: lightblue; */
+    width: 45%;
+    float: left;
+}
+
+.col-2 {
+    /* background-color: lightgreen; */
+    width: 45%;
+    /* float: left; */
+    float: right;
+    margin-left: 20px;
+}
+
+/* .blank {
+    clear: both;
+} */
+
+.div_1 {
+    background-color: lightseagreen;
+    /* clear: both; */
+}
