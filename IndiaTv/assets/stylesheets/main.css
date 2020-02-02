@@ -1,0 +1,97 @@
+/* Global Settings */
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* Helper Classes */
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    padding: 0px 15px;
+}
+
+/* Generic Settings */
+#topbar {
+    background-color: #EAEAEA;
+}
+#topbar ul li {
+    display: inline-block;
+    padding: 0px 5px;
+}
+#topbar .date {
+    width: 15%;
+}
+#topbar .date span {
+    font-size: 12px;
+}
+
+#topbar .lang-switch {
+    width: 70%;
+}
+#topbar .lang-switch ul {
+    padding: 0px 10px;
+    display: inline-block;
+    width: 21%;
+    background: url("https://static.indiatvnews.com/ins-web/images/header-language.png") no-repeat 0px -27px / 100% 200%;
+}
+#topbar .lang-switch ul li {
+    padding: 4px 0px 4px 0px;
+    font-size: 13px;
+    width: 35%;
+}
+#topbar .lang-switch ul li a {
+    color: #fff;
+}
+
+#topbar .user-links {
+    width: 15%;
+}
+
+
+#header {
+
+}
+
+#main-navigation {
+
+}
+
+#footer {
+
+}
+
+/* Specific Settings */
+
+/* Page 1 */
+
+
+/* Page 2 */
