@@ -61,7 +61,7 @@ a {
     padding: 0px 10px;
     display: inline-block;
     width: 21%;
-    background: url("https://static.indiatvnews.com/ins-web/images/header-language.png") no-repeat 0px -27px / 100% 200%;
+    background: url("https://static.indiatvnews.com/ins-web/images/header-language.png") no-repeat 0px -25px / 100% 200%;
 }
 #topbar .lang-switch ul li {
     padding: 4px 0px 4px 0px;
@@ -78,12 +78,55 @@ a {
 
 
 #header {
-
+    background-color: #0A4990;
+    padding: 8px 0px;
 }
+#header .header-wrapper{
+    position: relative;
+}
+#header .logo {
+    text-align: center;
+    width: 10%;
+    margin: 0 auto;
+}
+#header .links {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+#header ul li {
+    display: inline-block;
+    color: #fff;
+}
+#header ul li a {
+    color: #fff;
+}
+#header .links ul li:first-child {
+    padding: 6px 15px 10px 17px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
 
 #main-navigation {
 
 }
+#main-navigation ul li {
+    display: inline-block;
+}
+#main-navigation ul li a {
+    display: block;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 16px;
+}
+#main-navigation ul li:hover:not(:last-child) {
+    border-bottom: 3px solid red;
+}
+/* #main-navigation ul li:last-child:hover {
+    border-bottom: none;
+} */
 
 #footer {
 
