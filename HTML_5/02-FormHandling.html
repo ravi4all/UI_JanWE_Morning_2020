@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Form Handling</h1>
+
+    <form action="#">
+        <table>
+            <tr>
+                <td>Enter Name</td>
+                <td>
+                    <input type="text" placeholder="Enter Name" required value="Ram" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Email</td>
+                <td>
+                    <input type="email" placeholder="Enter Email" required value="ram@gmail.com" autocomplete="off">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td>
+                    <input type="password" placeholder="Enter Password" required value="12345" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Age</td>
+                <td>
+                    <input type="number" min="18" max="60">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter DOB</td>
+                <td>
+                    <input type="date">
+                </td>
+                <td>
+                    <input type="time">
+                </td>
+                <td>
+                    <input type="datetime-local">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter URL</td>
+                <td>
+                    <input type="url" placeholder="Enter URL">
+                </td>
+            </tr>
+            <tr>
+                <td>Choose Color</td>
+                <td>
+                    <input type="color">
+                </td>
+            </tr>
+            <tr>
+                <td>Select Range</td>
+                <td>
+                    <input type="range" value="0" onchange="out.value=value" max="10000" min="2000" step="200">
+                </td>
+                <td>
+                    <output id="out">0</output>
+                </td>
+            </tr>
+            <tr>
+                <td>Your Progress</td>
+                <td>
+                    <progress value="30" max="100"></progress>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Card Number</td>
+                <td>
+                    <input type="text" placeholder="Enter Card Number" 
+                    pattern="[a-z|0-9]{5}[0-9|a-z]{3}[@|#|$|&|*]{1}" 
+                    title="Enter 5 alphabets then 3 digits and 1 special symbol">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Message</td>
+                <td>
+                    <textarea spellcheck="false" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
