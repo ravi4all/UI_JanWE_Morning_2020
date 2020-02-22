@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0px;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0px 20px;
+            padding: 10px;
+            width: 10%;
+            text-align: center;
+            background-color: lightcoral;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            height: 600px;
+            border: 2px solid red;
+            margin-bottom: 20px;
+            padding-top: 150px;
+        }
+        section:not(#home) {
+            display: none;
+        }
+        #electronics:target,
+        #sports:target,
+        #books:target,
+        #more:target {
+            display: block;
+        }
+        #electronics:target ~ #home,
+        #sports:target ~ #home,
+        #books:target ~ #home,
+        #more:target ~ #home {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#electronics">Electronics</a></li>
+            <li><a href="#sports">Sports</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#more">More</a></li>
+        </ul>
+    </nav>
+
+    
+    <section id="electronics">
+        <h2>This is electronics page</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit distinctio nemo debitis explicabo et enim maxime eum. Nobis alias porro vero quasi ratione sed recusandae commodi at tenetur. Totam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit distinctio nemo debitis explicabo et enim maxime eum. Nobis alias porro vero quasi ratione sed recusandae commodi at tenetur. Totam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit distinctio nemo debitis explicabo et enim maxime eum. Nobis alias porro vero quasi ratione sed recusandae commodi at tenetur. Totam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit distinctio nemo debitis explicabo et enim maxime eum. Nobis alias porro vero quasi ratione sed recusandae commodi at tenetur. Totam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit distinctio nemo debitis explicabo et enim maxime eum. Nobis alias porro vero quasi ratione sed recusandae commodi at tenetur. Totam.
+        </p>
+    </section>
+    <section id="sports">
+        <h2>This is sports page</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit distinctio nemo debitis explicabo et enim maxime eum. Nobis alias porro vero quasi ratione sed recusandae commodi at tenetur. Totam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit distinctio nemo debitis explicabo et enim maxime eum. Nobis alias porro vero quasi ratione sed recusandae commodi at tenetur. Totam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit distinctio nemo debitis explicabo et enim maxime eum. Nobis alias porro vero quasi ratione sed recusandae commodi at tenetur. Totam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit distinctio nemo debitis explicabo et enim maxime eum. Nobis alias porro vero quasi ratione sed recusandae commodi at tenetur. Totam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit distinctio nemo debitis explicabo et enim maxime eum. Nobis alias porro vero quasi ratione sed recusandae commodi at tenetur. Totam.
+        </p>
+    </section>
+    <section id="books">
+        <h2>This is books page</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit distinctio nemo debitis explicabo et enim maxime eum. Nobis alias porro vero quasi ratione sed recusandae commodi at tenetur. Totam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit distinctio nemo debitis explicabo et enim maxime eum. Nobis alias porro vero quasi ratione sed recusandae commodi at tenetur. Totam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit distinctio nemo debitis explicabo et enim maxime eum. Nobis alias porro vero quasi ratione sed recusandae commodi at tenetur. Totam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit distinctio nemo debitis explicabo et enim maxime eum. Nobis alias porro vero quasi ratione sed recusandae commodi at tenetur. Totam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit distinctio nemo debitis explicabo et enim maxime eum. Nobis alias porro vero quasi ratione sed recusandae commodi at tenetur. Totam.
+        </p>
+    </section>
+    <section id="more">
+        <h2>This is more page</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit distinctio nemo debitis explicabo et enim maxime eum. Nobis alias porro vero quasi ratione sed recusandae commodi at tenetur. Totam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit distinctio nemo debitis explicabo et enim maxime eum. Nobis alias porro vero quasi ratione sed recusandae commodi at tenetur. Totam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit distinctio nemo debitis explicabo et enim maxime eum. Nobis alias porro vero quasi ratione sed recusandae commodi at tenetur. Totam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit distinctio nemo debitis explicabo et enim maxime eum. Nobis alias porro vero quasi ratione sed recusandae commodi at tenetur. Totam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit distinctio nemo debitis explicabo et enim maxime eum. Nobis alias porro vero quasi ratione sed recusandae commodi at tenetur. Totam.
+        </p>
+    </section>
+
+    <section id="home">
+        <h2>This is home page</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit distinctio nemo debitis explicabo et enim maxime eum. Nobis alias porro vero quasi ratione sed recusandae commodi at tenetur. Totam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit distinctio nemo debitis explicabo et enim maxime eum. Nobis alias porro vero quasi ratione sed recusandae commodi at tenetur. Totam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit distinctio nemo debitis explicabo et enim maxime eum. Nobis alias porro vero quasi ratione sed recusandae commodi at tenetur. Totam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit distinctio nemo debitis explicabo et enim maxime eum. Nobis alias porro vero quasi ratione sed recusandae commodi at tenetur. Totam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit distinctio nemo debitis explicabo et enim maxime eum. Nobis alias porro vero quasi ratione sed recusandae commodi at tenetur. Totam.
+        </p>
+    </section>
+    
+</body>
+</html>
