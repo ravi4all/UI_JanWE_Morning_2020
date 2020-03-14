@@ -1,0 +1,44 @@
+/* @media(min-width:992px) {
+    body {
+        background-color: lightgray;
+    }
+} */
+
+@media(min-width:992px) and (max-width:1200px){
+    body {
+        background-color: lightgray;
+    }
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.col {
+    width: 380px;
+}
+img {
+    width: 100%;
+}
+
+@media(max-width:1200px) {
+    .col {
+        width: 300px;
+    }
+}
+
+@media(max-width:992px) {
+    .col {
+        width: 45%;
+    }
+}
+
+@media(max-width:576px) {
+    .row {
+        display: block;
+    }
+    .col {
+        width: 100%;
+    }
+}
