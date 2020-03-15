@@ -1,0 +1,47 @@
+body{
+    margin: 0px;
+}
+
+#header {
+    background-color: lightgray;
+    padding: 10px;
+}
+h1 {
+    margin: 0px;
+}
+.row {
+    display: grid;
+    /* align-items: center; */
+    grid-template-columns: 20% 75%;
+    grid-template-areas: 'logo navigation'
+                         'logo search';
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    transition: 1s;
+}
+ul li a{
+    font-size: 20px;
+    text-decoration: none;
+}
+.col {
+    border: 1px solid red;
+}
+.col-1 {
+    grid-area: logo;
+}
+.col-2 {
+    grid-area: navigation;
+    margin-bottom: 20px;
+}
+.col-3 {
+    grid-area: search;
+}
+input {
+    width: 100%;
+}
