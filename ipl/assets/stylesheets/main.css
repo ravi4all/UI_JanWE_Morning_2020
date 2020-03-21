@@ -1,0 +1,168 @@
+/* Global Settings */
+body {
+    margin: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* Helper Classes */
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.row {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Generic Settings */
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.sprite {
+    background-image: url("https://www.iplt20.com/resources/v4.7.4/i/sprites/global-sprite.png");
+}
+
+#header {
+    background-color: #19398a;
+}
+#header .row {
+    align-items: center;
+    justify-content: space-between;
+}
+#header .logo {
+    width: 20%;
+}
+#header .logo a {
+    background-position: -115px -276px;
+    width: 110px;
+    height: 56px;
+    display: inline-block;
+}
+
+#header .search a {
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+}
+
+#header .search .search-icon {
+    padding: 30px;
+}
+
+#header .search .fan-poll {
+    background-color: #1299d5;
+    border-radius: 20px;
+    padding: 4px 13px 4px 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+#header .search .fan-poll .num {
+    height: 23px;
+    width: 24px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    /* padding: 2px; */
+    background-color: #fff;
+    color: #1299d5;
+}
+#header .search .fan-poll i {
+    margin: 0px 5px;
+}
+
+#main-navigation {
+    width: 55%;
+}
+#main-navigation > ul {
+    display: flex;
+    /* justify-content: space-between; */
+}
+#main-navigation > ul > li {
+    position: relative;
+} 
+#main-navigation > ul > li > a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    padding: 30px;
+}
+#main-navigation > ul:hover > li > a{
+    opacity: 0.7;
+}
+#main-navigation > ul > li > a:hover {
+    opacity: 1;
+}
+
+#main-navigation .dropdown {
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200%;
+    top: 60px;
+    left: -50%;
+    display: none;
+}
+#main-navigation .dropdown ul li a{
+    color: #19398a;
+    font-size: 13px;
+}
+
+#main-navigation ul li:hover .dropdown {
+    display: block;
+}
+
+#main-navigation ul li .dropdown:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    border: 5px solid #fff;
+    border-color: transparent transparent #fff;
+}
+
+#footer {
+
+}
+
+/* Specific Settings */
+
+/* Page 1 */
+
+
+/* Page 2 */
