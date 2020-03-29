@@ -1,0 +1,17 @@
+img {
+    animation: anim 5s infinite linear;
+    transform: translate(10px,10px);
+    animation-fill-mode: forwards;
+}
+
+@keyframes anim {
+    0% {
+        transform: translate(10px,10px);
+    }
+    50% {
+        transform: translate(20px,20px);
+    }
+    100% {
+        transform: translate(300px,200px);
+    }
+}
