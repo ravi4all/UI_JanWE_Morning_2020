@@ -1,0 +1,110 @@
+a = 13;
+13
+var b = 12;
+undefined
+b
+12
+a + b
+25
+a - b
+1
+typeof(a)
+"number"
+a = "hello"
+"hello"
+typeof(a)
+"string"
+a * b
+NaN
+a = "10"
+"10"
+b
+12
+a + b
+"1012"
+a * b
+120
+a / b
+0.8333333333333334
+a - b
+-2
+a = "hello"
+"hello"
+parseInt(a)
+NaN
+parseInt(a) * b
+NaN
+a = "10"
+"10"
+parseInt(a) * b
+120
+a
+"10"
+b = 10
+10
+if (a == b) {
+    console.log(true)
+} 
+else {
+    console.log(false)
+}
+VM632:2 true
+undefined
+a == b
+true
+a === b
+false
+c = [12,44,1,5,7]
+(5) [12, 44, 1, 5, 7]
+typeof(c)
+"object"
+typeof(a)
+"string"
+typeof(b)
+"number"
+typeof(NaN)
+"number"
+c instanceof Array
+true
+a instanceof String
+false
+typeof(a)
+"string"
+b instanceof Number
+false
+typeof(b)
+"number"
+num = new Number(10)
+Number {10}
+num
+Number {10}
+c
+(5) [12, 44, 1, 5, 7]
+typeof(num)
+"object"
+num instanceof Number
+true
+num instanceof Object
+true
+Array instanceof Object
+true
+typeof(Number)
+"function"
+typeof(Obj)
+"undefined"
+typeof(Object)
+"function"
+typeof(Function)
+"function"
+Array instanceof Object
+true
+Array instanceof Function
+true
+Number instanceof Function
+true
+typeof(Object)
+"function"
+Object instanceof Function
+true
+Function instanceof Object
+true
