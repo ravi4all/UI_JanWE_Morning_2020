@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Blur Event</h1>
+    <label for="n">Enter your name</label>
+    <input type="text" id="n" placeholder="Enter your name" onblur="validate()">
+    <h2 id="res"></h2>
+
+    <script>
+        function validate() {
+            var box = document.getElementById("n");
+            if(box.value == "") {
+                document.getElementById("res").innerHTML = "please fill this field";
+                box.style.border = "1px solid red";
+            }
+            else {
+                document.getElementById("res").innerHTML = "Welcome " + box.value;
+                box.style.border = "1px solid green";
+            }
+        }
+    </script>
+
+</body>
+</html>

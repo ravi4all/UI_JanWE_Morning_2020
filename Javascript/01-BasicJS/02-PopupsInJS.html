@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Alert
+    Prompt
+    Confirm -->
+
+    <h1>Popup boxes in JS</h1>
+    <button onclick="showWindow()">Click Here</button>
+
+    <script>
+        // function showWindow() {
+        //     var f_num = prompt("Enter first number : ",0);
+        //     var s_num = prompt("Enter second number : ",0);
+        //     var result = parseInt(f_num) + parseInt(s_num);
+        //     alert("Answer is " + result);
+        // }
+        function showWindow() {
+            var c = confirm("Are you sure you want to quit ?");
+            if(c) {
+                alert("Ok bye...");
+                window.close();
+            }
+            else {
+                alert("You will stay...");
+            }
+        }
+    </script>
+    
+</body>
+</html>

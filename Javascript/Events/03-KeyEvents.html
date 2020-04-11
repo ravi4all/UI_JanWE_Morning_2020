@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Keyevents</h1>
+
+    <!-- 3 types of key events
+    KeyPress
+    KeyDown
+    KeyUp -->
+    <!-- <input type="text" placeholder="Enter your name" onkeypress="show(this)"> -->
+    <!-- <input type="text" placeholder="Enter your name" onkeydown="show(this)"> -->
+    <input type="text" placeholder="Enter your name" onkeyup="show(this)">
+    <span id="item"></span>
+    
+    <script>
+        function show(obj) {
+            var text = obj.value;
+            console.log(text);
+            document.getElementById("item").innerHTML = text;
+        }
+    </script>
+</body>
+</html>
