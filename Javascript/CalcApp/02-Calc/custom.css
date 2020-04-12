@@ -1,0 +1,21 @@
+input {
+    display: block;
+    width: 50%;
+    height: 40px;
+    text-align: right;
+    margin: 0 auto;
+    font-size: 20px;
+}
+table {
+    margin: 0 auto;
+    width: 50%;
+}
+.btn {
+    background-color: orange;
+    color: #fff;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+}
