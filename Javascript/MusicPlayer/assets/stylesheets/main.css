@@ -1,0 +1,86 @@
+/* Global Settings */
+body {
+    margin: 0px;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* Helper Classes */
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.row {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Generic Settings */
+#header {
+
+}
+
+#main-navigation {
+
+}
+
+#footer {
+
+}
+
+/* Specific Settings */
+
+/* Page 1 */
+#musicPlayer audio {
+    width: 100%;
+}
+#musicPlayer button {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+}
+
+#all_songs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#all_songs li {
+    width: 23%;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+#all_songs img {
+    max-height: 140px;
+}
+#all_songs h5 {
+    font-size: 13px;
+}

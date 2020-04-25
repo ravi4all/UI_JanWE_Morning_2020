@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+    border-bottom: 2px solid red;
+}
+table {
+    margin: 0 auto;
+}
+.btn {
+    background-color: lightcoral;
+    color: #fff;
+    height: 100px;
+    width: 200px;
+    display: inline-block;
+    font-size: 40px;
+}
+.div_1 {
+    text-align: center;
+}
