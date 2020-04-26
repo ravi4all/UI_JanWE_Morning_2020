@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/b06605e970.js"></script>
 
     <script src="assets/javascripts/songs.js"></script>
+    <script src="assets/javascripts/model.js"></script>
     <script src="assets/javascripts/main.js"></script>
 
     <title>Hello, world!</title>
@@ -55,11 +56,17 @@
 
       <div id="musicPlayer">
         <div class="container mt-4">
-            <h4 class="mb-2">Currently Playing : <span id="current_song"></span></h4>
-            <audio controls id="audio">
+            <h6 class="mb-2">Currently Playing : <span id="current_song"></span></h6>
+            <audio id="audio">
                 <source src="">
             </audio>
-            <button id="prev_song">
+            <div id="audioPlayer">
+              <span>00:00</span>
+              <input type="range" class="slider" value="0">
+              <span>00:00</span>
+            </div>
+            <div class="buttons mt-2">
+              <button id="prev_song">
                 <i class="fas fa-step-backward"></i>
             </button>
             <button id="stop">
@@ -71,6 +78,7 @@
             <button id="next_song">
                 <i class="fas fa-step-forward"></i>
             </button>
+            </div>
         </div>
       </div>
 
