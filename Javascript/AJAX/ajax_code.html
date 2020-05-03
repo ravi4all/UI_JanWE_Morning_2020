@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>AJAX</h1>
+    <!-- Asynchronous Javascript and XML -->
+    <button onclick="loadData()">Load Data</button>
+
+    <script>
+        function loadData() {
+            getNews();
+            getScore();
+            getWeather();
+            getStock();
+        }
+        function getNews() {
+            console.log("Going to take news...");
+            console.log("News fetched successfully...");
+        }
+        function getScore() {
+            console.log("Going to take score...");
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                console.log(this.readyState, this.status);
+                if(this.readyState == 4 && this.status == 200) {
+                    for(var i = 0; i < 100000; i++) {
+                        for(var j = 0; j < 100000; j++) {
+                            var k = i + j;
+                        }
+                    }
+                    console.log("Score fetched successfully...");
+                }
+            }
+            xhttp.open('get','');
+            xhttp.send();
+        }
+        function getWeather() {
+            console.log("Going to take weather report...");
+            console.log("Weather Report fetched successfully...");
+        }
+        function getStock() {
+            console.log("Going to take stock...");
+            console.log("Stock fetched successfully...");
+        }
+    </script>
+    
+</body>
+</html>
