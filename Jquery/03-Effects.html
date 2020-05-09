@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Jquery  Effects</h1>
+
+    <!-- Jquery Effects : 
+    FadeIn/FadeOut Effect
+    Hide/Show Effect
+    SlideUp/SlideDown Effect -->
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    <hr>
+    <div>
+        <img src="../images/images/l34882-ironman-rigged-original-model--98611.jpg" alt="">
+    </div>
+    
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        // $("#hide").click(function() {
+        //     $("img").hide(1000);
+        // });
+        // $("#show").click(function() {
+        //     $("img").show(1000);
+        // });
+        // $("#toggle").click(function() {
+        //     $("img").toggle(1000);
+        // });
+        // $("#hide").click(function() {
+        //     $("img").fadeOut(1000);
+        // });
+        // $("#show").click(function() {
+        //     $("img").fadeIn(1000);
+        // });
+        // $("#toggle").click(function() {
+        //     $("img").fadeToggle(1000);
+        // });
+        $("#hide").click(function() {
+            $("div").slideUp(10000);
+        });
+        $("#show").click(function() {
+            $("div").slideDown(10000);
+        });
+        $("#toggle").click(function() {
+            $("div").slideToggle(10000);
+        });
+    </script>
+</body>
+</html>
