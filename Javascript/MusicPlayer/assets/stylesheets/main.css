@@ -114,3 +114,25 @@ input[type="range"]::-webkit-slider-thumb {
 #all_songs h5 {
     font-size: 13px;
 }
+
+#playlist li {
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+    padding: 20px;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+#playlist li img {
+    width: 10%;
+}
+#playlist li h6 {
+    width: 30%;
+}
+#playlist li button {
+    width: 20%;
+    margin-left: 150px;
+}
+#playlist li:hover {
+    background-color: lightsteelblue;
+}
