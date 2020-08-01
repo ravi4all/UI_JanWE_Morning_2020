@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text_box {
+            position: relative;
+            width: 30%;
+        }
+        .text_box input {
+            width: 100%;
+        }
+        img {
+            position: absolute;
+            width: 4%;
+            right: 0px;
+            top: 4px;
+            display: none;
+        }
+        .text_box.err img {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Change Event</h1>
+
+    <div class="text_box">
+        <input onchange="validate(this)" type="text" placeholder="Enter your name">
+        <img src="../../images/Football.png" alt="">
+    </div>
+
+    <span></span>
+
+    <script>
+        function validate(obj) {
+            // alert("Blur Called....");
+            var username = obj.value;
+            var errorBox = document.querySelector("span");
+            if(username == "") {
+                errorBox.innerHTML = "Please fill this field";
+                obj.style.border = "1px solid red";
+                document.querySelector(".text_box").classList.toggle('err');
+            }
+            else {
+                errorBox.innerHTML = "";
+                obj.style.border = "1px solid green";
+            }
+        }
+    </script>
+
+</body>
+</html>

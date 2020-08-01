@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid red;
+        }
+        #parent {
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+        span {
+            position: absolute;
+            background-color: red;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mouse Events</h1>
+
+    <!-- <div id="parent" onmouseover="changeImage(this)" onmouseout="origImage(this)">
+        <img src="../../images/hulk5-18463.gif" alt="">
+    </div>
+
+    <script>
+        function changeImage(div) {
+            div.innerHTML = '<img src="../../images/hulksmash2.gif" alt="">';
+        }
+        function origImage(div) {
+            div.innerHTML = '<img src="../../images/hulk5-18463.gif" alt="">';
+        }
+    </script> -->
+
+    <div id="parent" onmousemove="doAnimate(this)">
+        <!-- <span></span> -->
+    </div>
+    
+    <script>
+        function doAnimate(div)  {
+            var mouseX = event.clientX;
+            var mouseY = event.clientY;
+            // console.log(mouseX, mouseY);
+            // var span_tag = document.querySelector("span");
+            // span_tag.style.left = mouseX - 100 + "px";
+            // span_tag.style.top = mouseY - 100 + "px";
+
+            var span = document.createElement("span");
+            div.appendChild(span);
+            span.style.left = mouseX - 10 + "px";
+            span.style.top = mouseY - 10 + "px";
+        }
+    </script>
+</body>
+</html>
