@@ -6,6 +6,7 @@ function initEvents() {
     audioPlayer = document.querySelector("#audio");
     showCurrentSong = document.querySelector("#current_song");
     loadAllSongs();
+    loadPlaylist();
 }
 
 function loadAllSongs() {
@@ -70,6 +71,7 @@ function addToPlaylist() {
         currentSong.song_thumb);
     
     showPlayList();
+    savePlaylist();
 }
 
 function showPlayList() {
@@ -107,4 +109,29 @@ function deleteFromPlaylist() {
     var songId = event.srcElement.parentElement.children[0].title;
     playListOperations.deleteSong(songId);
     showPlayList();
+    savePlaylist();
+}
+
+function savePlaylist() {
+    if(window.localStorage) {
+        var json = JSON.stringify(playListOperations.playList);
+        localStorage.setItem('playlist', json);
+    }
+    else {
+        alert("Localstorage not supported...");
+    }
+}
+
+function loadPlaylist() {
+    if(window.localStorage) {
+        if(localStorage.playlist) {
+            // var data = localStorage.playlist;
+            var data = localStorage.getItem("playlist");
+            playListOperations.playList = JSON.parse(data);
+            showPlayList();
+        }
+    }
+    else {
+        alert("Localstorage not supported...");
+    }
 }

@@ -19,9 +19,23 @@ class Song {
 var playListOperations = {
     "playList" : [],
     addSong : function(id, name, url, thumb) {
-        var song = new Song(id, name, url, thumb);
-        this.playList.push(song);
-        console.log(this.playList);
+        if (this.playList.length > 0) {
+            for(var i = 0; i < this.playList.length; i++) {
+                if(this.playList[i].id == id) {
+                    console.log("Song Already Exist...");
+                    break;
+                }
+                else {
+                    var song = new Song(id, name, url, thumb);
+                    this.playList.push(song);
+                    break;
+                }
+            }
+        }
+        else {
+            var song = new Song(id, name, url, thumb);
+            this.playList.push(song);
+        }
     },
 
     deleteSong : function(id) {
@@ -40,7 +54,6 @@ var playListOperations = {
         this.playList = this.playList.filter(function(obj) {
             return obj.selected == false;
         });
-
 
     },
 
