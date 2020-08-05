@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Ajax Need</h1>
+
+    <button onclick="start()">Load AJAX</button>
+
+    <script>
+        function start() {
+            one();
+            two();
+            three();
+        }
+
+        function one() {
+            console.log("Function one called...");
+        }
+        function two() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                // console.log(this.readyState, this.status);
+                if(this.readyState == 4 && this.status == 200) {
+                    console.log("Function two called...");
+                    data = this.responseText;
+                    // console.log(data);
+                }
+            }
+            xhttp.open("get", "https://api.covid19india.org/states_daily.json");
+            xhttp.send();
+            // console.log("Function two called...");
+        }
+        function three() {
+            console.log("Function three called...");
+        }
+    </script>
+    
+</body>
+</html>
