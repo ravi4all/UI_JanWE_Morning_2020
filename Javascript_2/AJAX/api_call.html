@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Apple ITunes</h1>
+
+    <a href="https://itunes.apple.com/search?term=jack+johnson&limit=25" download="songs_1.json">Download</a>
+    <br><br>
+
+    <button onclick="loadSongs()">Load Songs</button>
+
+    <ul id="songs">
+
+    </ul>
+    
+    <script>
+        function loadSongs() {
+            var ul = document.querySelector("#songs");
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if(this.readyState == 4 && this.status == 200) {
+                    var data = this.responseText;
+                    var json = JSON.parse(data);
+                    var songsList = json.results;
+                    songsList.forEach(function(obj) {
+                        var li = document.createElement("li");
+                        li.innerHTML = obj.artistName + " - ";
+                        var span = document.createElement("span");
+                        span.innerHTML = obj.trackName;
+                        li.appendChild(span);
+                        ul.appendChild(li);
+                    })
+                }
+            }
+            // xhttp.open('get','https://itunes.apple.com/search?term=jack+johnson&limit=25');
+            xhttp.open('get', 'songs.json');
+            xhttp.send();
+        }
+    </script>
+</body>
+</html>
