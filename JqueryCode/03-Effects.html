@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Jquery Effects</h1>
+
+    <!-- Hide/Show
+    Fade In/Fade Out
+    Slide Up/Slide Down -->
+
+    <button id="btn_1">Hide</button>
+    <button id="btn_2">Show</button>
+    <button id="btn_3">Toggle</button>
+    <hr>
+    <div>
+        <img src="../images/images/l34882-ironman-rigged-original-model--98611.jpg" alt="">
+    </div>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        // $("#btn_1").click(function() {
+        //     $("div img").hide(1000);
+        // });
+        // $("#btn_2").click(function() {
+        //     $("div img").show(1000);
+        // });
+        // $("#btn_3").click(function() {
+        //     $("div img").toggle(1000);
+        // });
+
+        // $("#btn_1").click(function() {
+        //     $("div img").fadeOut(1000);
+        // });
+        // $("#btn_2").click(function() {
+        //     $("div img").fadeIn(1000);
+        // });
+        // $("#btn_3").click(function() {
+        //     $("div img").fadeToggle(1000);
+        // });
+
+        // Accordions
+        $("#btn_1").click(function() {
+            $("div").slideUp(1000);
+        });
+        $("#btn_2").click(function() {
+            $("div").slideDown(1000);
+        });
+        $("#btn_3").click(function() {
+            $("div").slideToggle(1000);
+        });
+    </script>
+    
+</body>
+</html>

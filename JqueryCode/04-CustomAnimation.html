@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Custom Animation</h1>
+
+    <button id="start">Start Animation</button>
+    <!-- <button id="stop">Stop Animation</button> -->
+    <hr>
+    <img src="../images/images/l34882-ironman-rigged-original-model--98611.jpg" alt="img">
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        var img = $("img");
+        $("button").click(function() {
+            // img.animate({
+            //     'left' : 300,
+            //     'opacity' : 0.5
+            // }, 1000);
+            // img.animate({
+            //     'left' : 300,
+            //     'top' : 400,
+            //     'opacity' : 1
+            // }, 1000);
+            // img.animate({
+            //     'left' : 0,
+            //     'top' : 120,
+            //     'opacity' : 1
+            // }, 1000);
+            
+            // img.addClass("animate");
+            // img.removeClass("animate");
+            img.toggleClass("animate");
+        })
+    </script>
+    
+</body>
+</html>

@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("button").on("click", function() {
+    $("button").click(function() {
         let opr = $(this).html();
         let f_num = $("#box_1").val();
         let s_num = $("#box_2").val();
