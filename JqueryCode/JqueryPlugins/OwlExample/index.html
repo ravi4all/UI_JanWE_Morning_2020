@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="owl.carousel.min.css">
+</head>
+<body>
+
+    <h1>Owl Carousel</h1>
+
+    <div class="owl-carousel owl-theme">
+        <div>
+            <img src="../../../images/bahubali.jpg" alt="">
+        </div>
+        <div>
+            <img src="../../../images/dhoni.jpg" alt="">
+        </div>
+        <div>
+            <img src="../../../images/bahubali.jpg" alt="">
+        </div>
+        <div>
+            <img src="../../../images/dhoni.jpg" alt="">
+        </div>
+        <div>
+            <img src="../../../images/bahubali.jpg" alt="">
+        </div>
+      </div>
+    
+      <script src="../../jquery-3.5.1.min.js"></script>
+      <script src="owl.carousel.min.js"></script>
+      <script>
+          $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav:true
+                    },
+                    600:{
+                        items:3,
+                        nav:false
+                    },
+                    1000:{
+                        items:5,
+                        nav:true,
+                        loop:true
+                    }
+                }
+            });
+            });
+      </script>
+</body>
+</html>

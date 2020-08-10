@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>AJAX Call</h1>
+
+    <input type="text" placeholder="Enter query" id="box">
+    <ul id="list">
+        
+    </ul>
+    
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        var list = $("#list");
+        $("#box").keyup(function() {
+            var value = $(this).val();
+            $.getJSON("https://raw.githubusercontent.com/ravi4all/UI_JanWE_Morning_2020/master/MusicApp_2/assets/javascripts/songs_data.json", function(data) {
+                var arr = data;
+                arr = data.filter(function(obj) {
+                    return obj.song_name.includes(value);
+                });
+                console.log(arr);
+            });
+        })
+    </script>
+</body>
+</html>
