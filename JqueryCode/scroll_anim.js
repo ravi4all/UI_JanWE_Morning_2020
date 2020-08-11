@@ -1,4 +1,11 @@
 $(document).ready(function() {
+
+    $(".overlay").fadeOut(2000);
+
+    $("#container").css({
+        'opacity' : 1
+    });
+
     $("header").css({
         'transform':'translateY(0%)',
         'opacity':1

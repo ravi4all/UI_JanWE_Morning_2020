@@ -1,6 +1,10 @@
 body {
     overflow-x: hidden;
 }
+#container {
+    opacity: 0;
+    transition: 1s;
+}
 header {
     text-align: center;
     background-color: lightgray;
@@ -42,3 +46,31 @@ img {
     transform: translateX(0%);
 }
 
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+}
+.loader {
+    position: absolute;
+    left: calc(50% - 100px);
+    top: calc(50% - 150px);
+    height: 200px;
+    width: 200px;
+    border: 40px solid red;
+    border-radius: 50%;
+    border-color: red transparent blue;
+    animation: loader 3s infinite linear;
+}
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
